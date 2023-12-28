@@ -29,7 +29,6 @@ public class Rogue extends Character {
         }else{
             System.out.println("[Set Stealth Level FAILED]\n!!Please input integer level!!");
         }
-        
     }
     public void setDaggerType(String type) {
         this.daggerType = type;
