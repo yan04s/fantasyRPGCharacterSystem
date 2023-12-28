@@ -18,12 +18,21 @@ public class Rogue extends Character {
     public int getHealthLock() {
         return healthLock;
     }
-    public void setStealthLevel(int stealthLevel) {
-        this.stealthLevel = stealthLevel;
-        evade();
+    public static boolean isNumeric(String str) {
+        // Use regular expression to check if the string consists of only numeric characters
+        return str.matches("\\d+");
     }
-    public void setDaggerType(String daggerType) {
-        this.daggerType = daggerType;
+    public void setStealthLevel(String level) {
+        if (isNumeric(level)) {
+            this.stealthLevel = Integer.parseInt(level);
+            evade();
+        }else{
+            System.out.println("[Set Stealth Level FAILED]\n!!Please input integer level!!");
+        }
+        
+    }
+    public void setDaggerType(String type) {
+        this.daggerType = type;
     }
     public void stab(Character target){
         if(target.getHealthLock()==0){

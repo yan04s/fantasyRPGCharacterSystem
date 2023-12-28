@@ -50,11 +50,11 @@ public class Character {
     public void removeSkill(Skill c) {
         this.skills.remove(c);
     }
-    public void setCharacterID(String characterID) {
-        this.characterID = characterID;
+    public void setCharacterID(String id) {
+        this.characterID = id;
     }
-    public void setCharacterName(String characterName) {
-        this.characterName = characterName;
+    public void setCharacterName(String name) {
+        this.characterName = name;
     }
     public void setLevel(int level) {
         this.level = level;

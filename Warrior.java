@@ -14,11 +14,11 @@ public class Warrior extends Character {
     public String getArmorType() {
         return armorType;
     }
-    public void setWeaponType(String weaponType) {
-        this.weaponType = weaponType;
+    public void setWeaponType(String weapon) {
+        this.weaponType = weapon;
     }
-    public void setArmorType(String armorType) {
-        this.armorType = armorType;
+    public void setArmorType(String armor) {
+        this.armorType = armor;
         shieldBlock();
     }
     public int getHealthLock() {

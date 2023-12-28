@@ -13,8 +13,8 @@ public class Mage extends Character {
     public int getHealthLock() {
         return healthLock;
     }
-    public void setElementalAffinity(String elementalAffinity) {
-        this.elementalAffinity = elementalAffinity;
+    public void setElementalAffinity(String element) {
+        this.elementalAffinity = element;
     }
     public void castElementalSpell(String spellType){
         if(super.getLevel()<5&&super.getLevel()>0){

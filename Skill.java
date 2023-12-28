@@ -16,11 +16,11 @@ public class Skill {
     public String getSkillDescription() {
         return skillDescription;
     }
-    public void setSkillName(String skillName) {
-        this.skillName = skillName;
+    public void setSkillName(String name) {
+        this.skillName = name;
     }
-    public void setSkillDescription(String skillDescription) {
-        this.skillDescription = skillDescription;
+    public void setSkillDescription(String description) {
+        this.skillDescription = description;
     }
 
     @Override
